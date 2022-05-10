@@ -12,6 +12,7 @@ namespace WordADHD
 {
     public partial class Form1 : Form
     {
+        // getter and setter
         public string secretWord { get; set; }
 
         public Form1()
@@ -20,6 +21,7 @@ namespace WordADHD
             setUpGame();
         }
 
+        // initialize game by getting a secret word and clearing the form
         public string setUpGame()
         {
             secretWord = getWord();
@@ -35,12 +37,15 @@ namespace WordADHD
 
         public void btnCheck_Click(object sender, EventArgs e)
         {
+            // check if user completed their 10 guesses
             if (lstGuesses.Items.Count < 10)
             {
+                // get user input, then call checkWord, and add it to list of guesses
                 string guess = txtGuess.Text;
                 checkWord(guess);
                 lstGuesses.Items.Add(guess);
             }
+            // else print message
             else
             {
                 MessageBox.Show("Oops you have no more chances... The secret word was " + secretWord);
@@ -48,6 +53,7 @@ namespace WordADHD
 
         } // end btnCheck
 
+        // get secret word from list
         public string getWord()
         {
             var random = new Random();
@@ -57,22 +63,27 @@ namespace WordADHD
             return secretWord;
         }
 
+        // check if user guess is the secret word
         public void checkWord(string guess)
         {
             TextBox[] txtBoxes = { txtWord0, txtWord1, txtWord2, txtWord3, txtWord4 };
 
+            // if word is accurate lenght (5), check letters
             if (guess.Length == 5)
             {
                 for (int i = 0; i < guess.Length; i++)
                 {
+                    // if letter well placed, display it
                     if (guess[i] == secretWord[i])
                     {
                         txtBoxes[i].Text = guess[i].ToString();
                     }
+                    // if letter is in secret word, warn the user
                     else if (guess.Contains(secretWord[i]))
                     {
                         MessageBox.Show(guess[i] + " is in the wrong position");
                     }
+                    // else warn the user that the letter is not in the secret word
                     else
                     {
                         MessageBox.Show(guess[i] + " is not in the secret word");
@@ -80,6 +91,7 @@ namespace WordADHD
 
                 }
             }
+            // if word is not 5 letter long, display message
             else
             {
                 MessageBox.Show("Word must be 5 lettes long.");
@@ -87,11 +99,13 @@ namespace WordADHD
             
         }
 
+        // reset game
         private void btnReset_Click(object sender, EventArgs e)
         {
             setUpGame();
         }
 
+        // exit game
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
