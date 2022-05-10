@@ -1,0 +1,11 @@
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\bin\Debug\WordADHD.exe.config
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\bin\Debug\WordADHD.exe
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\bin\Debug\WordADHD.pdb
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.csproj.AssemblyReference.cache
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.csproj.SuggestedBindingRedirects.cache
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.Form1.resources
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.Properties.Resources.resources
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.csproj.GenerateResource.cache
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.csproj.CoreCompileInputs.cache
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.exe
+C:\Users\Christian\Desktop\Julie\WordADHD\WordADHD\obj\Debug\WordADHD.pdb
